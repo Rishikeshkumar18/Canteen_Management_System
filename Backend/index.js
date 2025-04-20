@@ -30,7 +30,7 @@ const pool = new Pool({
 });
 
 // =======================
-//   Helper Functions
+//   Helper for  Functions
 // =======================
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
