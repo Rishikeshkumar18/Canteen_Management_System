@@ -156,7 +156,7 @@ app.delete('/users/:id', authenticateToken, async (req, res) => {
 
 
 
-// Fetch Users (Get all users)
+// Fetch Users (Get all users) ALLCO
 app.get('/users', authenticateToken, async (req, res) => {
   const page = parseInt(req.query.page) || 1; // Get page from query params (default to page 1)
   const limit = 10; // Number of users per page
