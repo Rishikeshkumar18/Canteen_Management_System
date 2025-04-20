@@ -134,7 +134,7 @@ app.post('/login', async (req, res) => {
 
 
 
-// Delete User
+// Delete Users
 app.delete('/users/:id', authenticateToken, async (req, res) => {
   try {
     const result = await pool.query('DELETE FROM users WHERE id = $1 RETURNING id', [req.params.id]);
